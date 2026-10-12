@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "China Earthquake Alert",
+        "description": "Pick the alert target location on the map (distance and alerts are computed from here). Data source: [CENC quick reports](https://news.ceic.ac.cn)",
+        "data": {
+          "location": "Alert target location",
+          "name": "Name (leave empty to use the default name)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This location is already configured. Add another location from the integrations page."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "China Earthquake Alert options",
+        "data": {
+          "scan_interval": "Update interval (minutes)",
+          "radius_km": "Alert radius (km)",
+          "min_magnitude": "Minimum alert magnitude"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "latest_earthquake": {
+        "name": "Latest earthquake"
+      },
+      "wave_countdown": {
+        "name": "Wave countdown"
+      }
+    },
+    "binary_sensor": {
+      "alert": {
+        "name": "Earthquake alert"
+      }
+    }
+  }
+}

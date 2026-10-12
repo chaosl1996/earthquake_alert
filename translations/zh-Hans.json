@@ -1,0 +1,45 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "中国地震预警",
+        "description": "在地图上选择预警目标位置（距离与告警均按此位置计算），数据来源：[中国地震台网速报](https://news.ceic.ac.cn)",
+        "data": {
+          "location": "预警目标位置",
+          "name": "名称（留空则默认为“地震预警”）"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "该位置已配置，可在集成页面添加其他位置。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "中国地震预警选项",
+        "data": {
+          "scan_interval": "数据刷新间隔（分钟）",
+          "radius_km": "告警半径（公里）",
+          "min_magnitude": "最小告警震级",
+          "ws_channels": "实时预警通道（WebSocket 秒级推送）"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "latest_earthquake": {
+        "name": "最新地震"
+      },
+      "wave_countdown": {
+        "name": "地震波倒计时"
+      }
+    },
+    "binary_sensor": {
+      "alert": {
+        "name": "地震告警"
+      }
+    }
+  }
+}
