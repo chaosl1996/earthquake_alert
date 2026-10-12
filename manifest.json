@@ -3,10 +3,10 @@
   "name": "China Earthquake Alert",
   "codeowners": ["@chaosl1996"],
   "config_flow": true,
-  "documentation": "https://github.com/chaosl1996/china-earthquake-alert",
+  "documentation": "https://github.com/chaosl1996/earthquake_alert",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/chaosl1996/china-earthquake-alert/issues",
+  "issue_tracker": "https://github.com/chaosl1996/earthquake_alert/issues",
   "requirements": [],
   "version": "1.0.0"
 }
